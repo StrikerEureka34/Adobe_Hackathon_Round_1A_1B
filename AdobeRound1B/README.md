@@ -44,11 +44,8 @@ This system addresses the challenge of information overload by providing persona
 # Install dependencies
 pip install -r requirements.txt
 
-# Run with sample data (tested successfully)
-python intelligent_document_analyzer.py input/challenge1b_input\ \(1\).json
-
-# Expected output: Processing complete in ~10 seconds
-# Results saved to: output/challenge1b_output\ \(1\)_output.json
+# Run the analyzer
+python intelligent_document_analyzer.py
 ```
 
 ### Docker Setup
@@ -116,12 +113,10 @@ This project demonstrates:
 - **Scalability**: Architecture supports various domains and use cases
 
 ### Performance Metrics
-- **Processing Speed**: 10.51 seconds (83% faster than requirement)
+- **Processing Speed**: <60 seconds per document
 - **Memory Efficiency**: <1GB RAM usage
-- **Accuracy**: High relevance scoring with domain filtering (top confidence: 0.3019)
+- **Accuracy**: High relevance scoring with domain filtering
 - **Scalability**: Handles multiple document types and personas
-- **Documents Processed**: 14 Adobe Acrobat PDFs simultaneously
-- **Content Analysis**: 451 sections analyzed, 25 top selections, 20 refined outputs
 
 ## 🔧 Configuration
 
@@ -132,32 +127,37 @@ The system automatically configures optimal settings, but key parameters can be 
 - **Cache Management**: Automatic embedding persistence
 - **Domain Filters**: Customizable relevance adjustments
 
-## 🚦 Status & Validation
+## 🚦 Status
 
-✅ **Core System**: Fully functional and tested  
-✅ **ML Integration**: Advanced transformer model (all-mpnet-base-v2)  
+✅ **Core System**: Fully functional  
+✅ **ML Integration**: Advanced transformer model  
 ✅ **Persona Profiling**: Intelligent user context detection  
-✅ **Performance**: 10.51 seconds processing time (beats 60s requirement)  
-✅ **Testing**: Successfully validated on Adobe Acrobat PDF collection  
-✅ **Output Quality**: Generated 25 relevant sections with 20 refined sub-sections  
-
-### Latest Test Results (HR Professional Persona)
-- **Input**: 14 Adobe Acrobat PDF documents
-- **Processing Time**: 10.51 seconds
-- **Sections Analyzed**: 451 total sections
-- **Top Selections**: 25 most relevant sections  
-- **Refined Output**: 20 detailed sub-sections
-- **Top Confidence Score**: 0.3019
-- **Persona Focus**: E-signature workflows, form management, compliance tools
-- **Output File**: `output/challenge1b_output (1)_output.json`
-
-### Key Success Metrics
-- **Speed**: 83% faster than 60-second requirement
-- **Relevance**: High-quality persona-aware filtering
-- **Coverage**: Comprehensive analysis of Adobe Acrobat features
-- **Accuracy**: Precise identification of HR-relevant content  
+✅ **Performance**: Optimized for hackathon requirements  
+✅ **Testing**: Validated on multiple use cases  
 
 ---
+
+`If the docker doesnt work but the python files are working properly please refer the instruction below:`
+
+<img width="1280" height="686" alt="image" src="https://github.com/user-attachments/assets/1dcd8439-99bf-4a5e-aea5-798ea5dd5222" />
+
+<img width="1280" height="691" alt="image" src="https://github.com/user-attachments/assets/5cba87c7-b325-441b-bd69-ffa89f34406a" />
+
+<img width="1280" height="692" alt="image" src="https://github.com/user-attachments/assets/ae70a8e3-df66-4c12-960c-5ecf029432d1" />
+
+<img width="1280" height="671" alt="image" src="https://github.com/user-attachments/assets/686123f8-e510-4321-8029-6bf551ac5c36" />
+
+<img width="1280" height="696" alt="image" src="https://github.com/user-attachments/assets/56948d59-de97-4a4d-8cc0-1a093b6fde4f" />
+
+<img width="1279" height="671" alt="image" src="https://github.com/user-attachments/assets/173a9b00-09b0-47b4-a3cd-d88d5172c447" />
+
+
+
+
+
+
+
+
 
 **Built for Adobe Hackathon Round 1B - "Connect What Matters — For the User Who Matters"**
 
